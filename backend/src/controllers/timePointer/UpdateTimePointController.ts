@@ -3,7 +3,7 @@ import {UpdateTimePointService} from '../../services/timePointer/UpdateTimePoint
 
 export class UpdateTimePointController{
     async handle(req:Request, res: Response){
-        const {id} = req.params
+        const { id } = req.params
         const data = req.body
 
             try{
