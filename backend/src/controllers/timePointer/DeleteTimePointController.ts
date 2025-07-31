@@ -6,8 +6,7 @@ export class DeleteTimePointController{
 
             try{
                 const service = new DeleteTimePointService()
-                const deleted =  await service.execute(id);
-                    return deleted
+                await service.execute(id);                 
             }catch(err){
                 return res.status(500).json({error: 'Erro ao deletar ponto', details:err})
             }
